@@ -304,7 +304,7 @@ tbody tr:last-child td{border-bottom:none}
     <div class="card" style="overflow: hidden;">
       <div style="background: linear-gradient(135deg, #4f46e5, #6366f1, #818cf8); height: 80px; position: relative;"></div>
       <div style="text-align: center; margin-top: -40px; padding: 0 20px 20px;">
-        <div class="avatar" style="width: 80px; height: 80px; font-size: 24px; margin: 0 auto 12px; border: 3px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">АП</div>
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Алексей Петров" style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 12px; border: 3px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.15); display: block; object-fit: cover;"/>
         <h3 style="margin: 0 0 4px; font-size: 18px; font-weight: 700; color: #1e293b;">Алексей Петров</h3>
         <p style="margin: 0 0 12px; font-size: 13px; color: #64748b;">Senior Software Engineer</p>
         <div style="display: flex; gap: 6px; justify-content: center; flex-wrap: wrap;">
@@ -319,20 +319,20 @@ tbody tr:last-child td{border-bottom:none}
       <div class="card-content" style="padding: 16px 20px;">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
           <div>
-            <div style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px;">Отдел</div>
-            <div style="font-size: 13px; color: #334155; font-weight: 500;">Инженерия / Backend</div>
+            <div style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px;">Департамент</div>
+            <div style="font-size: 13px; color: #334155; font-weight: 500;">Департамент информационных технологий</div>
           </div>
           <div>
-            <div style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px;">Локация</div>
-            <div style="font-size: 13px; color: #334155; font-weight: 500;">Москва, Россия</div>
+            <div style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px;">Управление</div>
+            <div style="font-size: 13px; color: #334155; font-weight: 500;">Управление разработки и архитектуры</div>
           </div>
           <div>
             <div style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px;">Email</div>
             <div style="font-size: 13px; color: #334155; font-weight: 500;">a.petrov@company.ru</div>
           </div>
           <div>
-            <div style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px;">Дата найма</div>
-            <div style="font-size: 13px; color: #334155; font-weight: 500;">С марта 2021</div>
+            <div style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px;">Табельный номер</div>
+            <div style="font-size: 13px; color: #334155; font-weight: 500;">00322322</div>
           </div>
         </div>
       </div>
@@ -343,7 +343,7 @@ tbody tr:last-child td{border-bottom:none}
         <div style="font-size: 12px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; font-weight: 600;">Руководство</div>
 
         <div style="display: flex; align-items: center; gap: 10px; padding: 10px; border-radius: 8px; background: #f8fafc; margin-bottom: 8px;">
-          <div class="avatar" style="width: 36px; height: 36px; font-size: 12px; background: linear-gradient(135deg, #ec4899, #f472b6);">ИВ</div>
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ирина Волкова" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover; flex-shrink: 0;"/>
           <div style="flex: 1; min-width: 0;">
             <div style="font-size: 13px; font-weight: 600; color: #1e293b;">Ирина Волкова</div>
             <div style="font-size: 11px; color: #64748b;">Engineering Manager</div>
@@ -352,7 +352,7 @@ tbody tr:last-child td{border-bottom:none}
         </div>
 
         <div style="display: flex; align-items: center; gap: 10px; padding: 10px; border-radius: 8px; background: #f8fafc;">
-          <div class="avatar" style="width: 36px; height: 36px; font-size: 12px; background: linear-gradient(135deg, #3b82f6, #60a5fa);">ДК</div>
+          <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Дмитрий Козлов" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover; flex-shrink: 0;"/>
           <div style="flex: 1; min-width: 0;">
             <div style="font-size: 13px; font-weight: 600; color: #1e293b;">Дмитрий Козлов</div>
             <div style="font-size: 11px; color: #64748b;">VP of Engineering</div>
@@ -464,10 +464,9 @@ tbody tr:last-child td{border-bottom:none}
           </div>
           <div style="display: flex; gap: 4px;" id="category-filters">
             <button class="btn btn-primary filter-btn active" data-filter="all" onclick="filterByCategory('all', this)" style="font-size: 11px; padding: 5px 10px;">Все</button>
-            <button class="btn btn-outline filter-btn" data-filter="business" onclick="filterByCategory('business', this)" style="font-size: 11px; padding: 5px 10px;">Бизнес</button>
-            <button class="btn btn-outline filter-btn" data-filter="development" onclick="filterByCategory('development', this)" style="font-size: 11px; padding: 5px 10px;">Развитие</button>
-            <button class="btn btn-outline filter-btn" data-filter="team" onclick="filterByCategory('team', this)" style="font-size: 11px; padding: 5px 10px;">Команда</button>
-            <button class="btn btn-outline filter-btn" data-filter="innovation" onclick="filterByCategory('innovation', this)" style="font-size: 11px; padding: 5px 10px;">Инновации</button>
+            <button class="btn btn-outline filter-btn" data-filter="team-kpi" onclick="filterByCategory('team-kpi', this)" style="font-size: 11px; padding: 5px 10px;">Командные KPI</button>
+            <button class="btn btn-outline filter-btn" data-filter="individual-kpi" onclick="filterByCategory('individual-kpi', this)" style="font-size: 11px; padding: 5px 10px;">Индивидуальные KPI</button>
+            <button class="btn btn-outline filter-btn" data-filter="jira" onclick="filterByCategory('jira', this)" style="font-size: 11px; padding: 5px 10px;">Оценка Jira</button>
           </div>
         </div>
 
@@ -489,10 +488,10 @@ tbody tr:last-child td{border-bottom:none}
             <tbody id="goals-tbody">
 
               <!-- Goal 1 -->
-              <tr class="goal-row" data-category="business" onclick="toggleGoalDetail('goal-1')" style="cursor: pointer; border-bottom: 1px solid #f1f5f9; transition: background 0.15s;">
+              <tr class="goal-row" data-category="team-kpi" onclick="toggleGoalDetail('goal-1')" style="cursor: pointer; border-bottom: 1px solid #f1f5f9; transition: background 0.15s;">
                 <td style="padding: 12px 8px; text-align: center;"><span class="expand-arrow" id="arrow-goal-1" style="display: inline-block; transition: transform 0.2s; color: #94a3b8; font-size: 11px;">&#9654;</span></td>
                 <td style="padding: 12px 8px; font-weight: 500; color: #1e293b;">Миграция на микросервисную архитектуру</td>
-                <td style="padding: 12px 8px;"><span class="badge" style="background: #dbeafe; color: #2563eb; font-size: 11px;">Бизнес</span></td>
+                <td style="padding: 12px 8px;"><span class="badge" style="background: #dbeafe; color: #2563eb; font-size: 11px;">Командные KPI</span></td>
                 <td style="padding: 12px 8px; text-align: center; font-weight: 600; color: #334155;">30%</td>
                 <td style="padding: 12px 8px;">
                   <div style="display: flex; align-items: center; gap: 8px;">
@@ -520,10 +519,10 @@ tbody tr:last-child td{border-bottom:none}
               </tr>
 
               <!-- Goal 2 -->
-              <tr class="goal-row" data-category="business" onclick="toggleGoalDetail('goal-2')" style="cursor: pointer; border-bottom: 1px solid #f1f5f9; transition: background 0.15s;">
+              <tr class="goal-row" data-category="team-kpi" onclick="toggleGoalDetail('goal-2')" style="cursor: pointer; border-bottom: 1px solid #f1f5f9; transition: background 0.15s;">
                 <td style="padding: 12px 8px; text-align: center;"><span class="expand-arrow" id="arrow-goal-2" style="display: inline-block; transition: transform 0.2s; color: #94a3b8; font-size: 11px;">&#9654;</span></td>
                 <td style="padding: 12px 8px; font-weight: 500; color: #1e293b;">Повышение производительности API</td>
-                <td style="padding: 12px 8px;"><span class="badge" style="background: #dbeafe; color: #2563eb; font-size: 11px;">Бизнес</span></td>
+                <td style="padding: 12px 8px;"><span class="badge" style="background: #dbeafe; color: #2563eb; font-size: 11px;">Командные KPI</span></td>
                 <td style="padding: 12px 8px; text-align: center; font-weight: 600; color: #334155;">25%</td>
                 <td style="padding: 12px 8px;">
                   <div style="display: flex; align-items: center; gap: 8px;">
@@ -551,10 +550,10 @@ tbody tr:last-child td{border-bottom:none}
               </tr>
 
               <!-- Goal 3 -->
-              <tr class="goal-row" data-category="team" onclick="toggleGoalDetail('goal-3')" style="cursor: pointer; border-bottom: 1px solid #f1f5f9; transition: background 0.15s;">
+              <tr class="goal-row" data-category="individual-kpi" onclick="toggleGoalDetail('goal-3')" style="cursor: pointer; border-bottom: 1px solid #f1f5f9; transition: background 0.15s;">
                 <td style="padding: 12px 8px; text-align: center;"><span class="expand-arrow" id="arrow-goal-3" style="display: inline-block; transition: transform 0.2s; color: #94a3b8; font-size: 11px;">&#9654;</span></td>
                 <td style="padding: 12px 8px; font-weight: 500; color: #1e293b;">Менторство junior-разработчиков</td>
-                <td style="padding: 12px 8px;"><span class="badge" style="background: #fef3c7; color: #d97706; font-size: 11px;">Команда</span></td>
+                <td style="padding: 12px 8px;"><span class="badge" style="background: #fef3c7; color: #d97706; font-size: 11px;">Индивид. KPI</span></td>
                 <td style="padding: 12px 8px; text-align: center; font-weight: 600; color: #334155;">15%</td>
                 <td style="padding: 12px 8px;">
                   <div style="display: flex; align-items: center; gap: 8px;">
@@ -582,10 +581,10 @@ tbody tr:last-child td{border-bottom:none}
               </tr>
 
               <!-- Goal 4 -->
-              <tr class="goal-row" data-category="innovation" onclick="toggleGoalDetail('goal-4')" style="cursor: pointer; border-bottom: 1px solid #f1f5f9; transition: background 0.15s;">
+              <tr class="goal-row" data-category="individual-kpi" onclick="toggleGoalDetail('goal-4')" style="cursor: pointer; border-bottom: 1px solid #f1f5f9; transition: background 0.15s;">
                 <td style="padding: 12px 8px; text-align: center;"><span class="expand-arrow" id="arrow-goal-4" style="display: inline-block; transition: transform 0.2s; color: #94a3b8; font-size: 11px;">&#9654;</span></td>
                 <td style="padding: 12px 8px; font-weight: 500; color: #1e293b;">Внедрение CI/CD для новых сервисов</td>
-                <td style="padding: 12px 8px;"><span class="badge" style="background: #ede9fe; color: #7c3aed; font-size: 11px;">Инновации</span></td>
+                <td style="padding: 12px 8px;"><span class="badge" style="background: #fef3c7; color: #d97706; font-size: 11px;">Индивид. KPI</span></td>
                 <td style="padding: 12px 8px; text-align: center; font-weight: 600; color: #334155;">15%</td>
                 <td style="padding: 12px 8px;">
                   <div style="display: flex; align-items: center; gap: 8px;">
@@ -613,10 +612,10 @@ tbody tr:last-child td{border-bottom:none}
               </tr>
 
               <!-- Goal 5 -->
-              <tr class="goal-row" data-category="development" onclick="toggleGoalDetail('goal-5')" style="cursor: pointer; border-bottom: 1px solid #f1f5f9; transition: background 0.15s;">
+              <tr class="goal-row" data-category="jira" onclick="toggleGoalDetail('goal-5')" style="cursor: pointer; border-bottom: 1px solid #f1f5f9; transition: background 0.15s;">
                 <td style="padding: 12px 8px; text-align: center;"><span class="expand-arrow" id="arrow-goal-5" style="display: inline-block; transition: transform 0.2s; color: #94a3b8; font-size: 11px;">&#9654;</span></td>
                 <td style="padding: 12px 8px; font-weight: 500; color: #1e293b;">Документирование архитектуры</td>
-                <td style="padding: 12px 8px;"><span class="badge" style="background: #fce7f3; color: #db2777; font-size: 11px;">Развитие</span></td>
+                <td style="padding: 12px 8px;"><span class="badge" style="background: #ede9fe; color: #7c3aed; font-size: 11px;">Jira</span></td>
                 <td style="padding: 12px 8px; text-align: center; font-weight: 600; color: #334155;">10%</td>
                 <td style="padding: 12px 8px;">
                   <div style="display: flex; align-items: center; gap: 8px;">
@@ -644,10 +643,10 @@ tbody tr:last-child td{border-bottom:none}
               </tr>
 
               <!-- Goal 6 -->
-              <tr class="goal-row" data-category="development" onclick="toggleGoalDetail('goal-6')" style="cursor: pointer; border-bottom: 1px solid #f1f5f9; transition: background 0.15s;">
+              <tr class="goal-row" data-category="jira" onclick="toggleGoalDetail('goal-6')" style="cursor: pointer; border-bottom: 1px solid #f1f5f9; transition: background 0.15s;">
                 <td style="padding: 12px 8px; text-align: center;"><span class="expand-arrow" id="arrow-goal-6" style="display: inline-block; transition: transform 0.2s; color: #94a3b8; font-size: 11px;">&#9654;</span></td>
                 <td style="padding: 12px 8px; font-weight: 500; color: #1e293b;">Сертификация AWS Solutions Architect</td>
-                <td style="padding: 12px 8px;"><span class="badge" style="background: #fce7f3; color: #db2777; font-size: 11px;">Развитие</span></td>
+                <td style="padding: 12px 8px;"><span class="badge" style="background: #ede9fe; color: #7c3aed; font-size: 11px;">Jira</span></td>
                 <td style="padding: 12px 8px; text-align: center; font-weight: 600; color: #334155;">5%</td>
                 <td style="padding: 12px 8px;">
                   <div style="display: flex; align-items: center; gap: 8px;">
@@ -867,56 +866,94 @@ tbody tr:last-child td{border-bottom:none}
       </div>
       <div class="card-content" style="padding: 8px 16px 12px;">
 
-        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 4px; border-bottom: 1px solid #f1f5f9;">
-          <span style="font-size: 13px; color: #64748b;">Q4 2024</span>
-          <span style="font-size: 14px; font-weight: 700; color: #334155;">3.5</span>
-        </div>
-
-        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 4px; border-bottom: 1px solid #f1f5f9;">
-          <span style="font-size: 13px; color: #64748b;">Q1 2025</span>
-          <div style="display: flex; align-items: center; gap: 6px;">
-            <span style="font-size: 14px; font-weight: 700; color: #334155;">3.7</span>
-            <span style="font-size: 12px; color: #22c55e; font-weight: 600;">&#8593;</span>
+        <!-- 2026 — expanded by default -->
+        <div style="margin-bottom: 4px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 4px; cursor: pointer; border-bottom: 1px solid #e2e8f0;" onclick="toggleRatingYear('ry-2026', this)">
+            <span style="font-size: 13px; font-weight: 700; color: #1e293b;">2026</span>
+            <span style="font-size: 11px; color: #94a3b8; transition: transform 0.2s; display: inline-block;" class="ry-chevron">&#9660;</span>
+          </div>
+          <div id="ry-2026">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 9px 4px 9px 12px; border-bottom: 1px solid #f1f5f9;">
+              <span style="font-size: 13px; color: #64748b;">Q1</span>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <span style="font-size: 14px; font-weight: 700; color: #334155;">4.4</span>
+                <span style="font-size: 12px; color: #22c55e; font-weight: 600;">&#8593;</span>
+              </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 9px 4px 9px 12px;">
+              <span style="font-size: 13px; color: #64748b;">Q2</span>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <span style="font-size: 14px; font-weight: 600; color: #94a3b8;">&mdash;</span>
+                <span class="badge" style="font-size: 9px; background: #eef2ff; color: #4f46e5;">в процессе</span>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 4px; border-bottom: 1px solid #f1f5f9;">
-          <span style="font-size: 13px; color: #64748b;">Q2 2025</span>
-          <div style="display: flex; align-items: center; gap: 6px;">
-            <span style="font-size: 14px; font-weight: 700; color: #334155;">3.9</span>
-            <span style="font-size: 12px; color: #22c55e; font-weight: 600;">&#8593;</span>
+        <!-- 2025 — collapsed -->
+        <div style="margin-bottom: 4px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 4px; cursor: pointer; border-bottom: 1px solid #e2e8f0;" onclick="toggleRatingYear('ry-2025', this)">
+            <span style="font-size: 13px; font-weight: 700; color: #1e293b;">2025</span>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 12px; color: #64748b;">ср. 4.0</span>
+              <span style="font-size: 11px; color: #94a3b8; transition: transform 0.2s; display: inline-block; transform: rotate(-90deg);" class="ry-chevron">&#9660;</span>
+            </div>
+          </div>
+          <div id="ry-2025" style="display: none;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 9px 4px 9px 12px; border-bottom: 1px solid #f1f5f9;">
+              <span style="font-size: 13px; color: #64748b;">Q1</span>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <span style="font-size: 14px; font-weight: 700; color: #334155;">3.7</span>
+                <span style="font-size: 12px; color: #22c55e; font-weight: 600;">&#8593;</span>
+              </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 9px 4px 9px 12px; border-bottom: 1px solid #f1f5f9;">
+              <span style="font-size: 13px; color: #64748b;">Q2</span>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <span style="font-size: 14px; font-weight: 700; color: #334155;">3.9</span>
+                <span style="font-size: 12px; color: #22c55e; font-weight: 600;">&#8593;</span>
+              </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 9px 4px 9px 12px; border-bottom: 1px solid #f1f5f9;">
+              <span style="font-size: 13px; color: #64748b;">Q3</span>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <span style="font-size: 14px; font-weight: 700; color: #334155;">4.1</span>
+                <span style="font-size: 12px; color: #22c55e; font-weight: 600;">&#8593;</span>
+              </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 9px 4px 9px 12px;">
+              <span style="font-size: 13px; color: #64748b;">Q4</span>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <span style="font-size: 14px; font-weight: 700; color: #334155;">4.3</span>
+                <span style="font-size: 12px; color: #22c55e; font-weight: 600;">&#8593;</span>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 4px; border-bottom: 1px solid #f1f5f9;">
-          <span style="font-size: 13px; color: #64748b;">Q3 2025</span>
-          <div style="display: flex; align-items: center; gap: 6px;">
-            <span style="font-size: 14px; font-weight: 700; color: #334155;">4.1</span>
-            <span style="font-size: 12px; color: #22c55e; font-weight: 600;">&#8593;</span>
+        <!-- 2024 — collapsed -->
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 4px; cursor: pointer;" onclick="toggleRatingYear('ry-2024', this)">
+            <span style="font-size: 13px; font-weight: 700; color: #1e293b;">2024</span>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 12px; color: #64748b;">ср. 3.5</span>
+              <span style="font-size: 11px; color: #94a3b8; transition: transform 0.2s; display: inline-block; transform: rotate(-90deg);" class="ry-chevron">&#9660;</span>
+            </div>
           </div>
-        </div>
-
-        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 4px; border-bottom: 1px solid #f1f5f9;">
-          <span style="font-size: 13px; color: #64748b;">Q4 2025</span>
-          <div style="display: flex; align-items: center; gap: 6px;">
-            <span style="font-size: 14px; font-weight: 700; color: #334155;">4.3</span>
-            <span style="font-size: 12px; color: #22c55e; font-weight: 600;">&#8593;</span>
-          </div>
-        </div>
-
-        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 4px; border-bottom: 1px solid #f1f5f9;">
-          <span style="font-size: 13px; color: #64748b;">Q1 2026</span>
-          <div style="display: flex; align-items: center; gap: 6px;">
-            <span style="font-size: 14px; font-weight: 700; color: #334155;">4.4</span>
-            <span style="font-size: 12px; color: #22c55e; font-weight: 600;">&#8593;</span>
-          </div>
-        </div>
-
-        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 4px;">
-          <span style="font-size: 13px; color: #64748b;">Q2 2026</span>
-          <div style="display: flex; align-items: center; gap: 6px;">
-            <span style="font-size: 14px; font-weight: 600; color: #94a3b8;">&mdash;</span>
-            <span class="badge" style="font-size: 9px; background: #eef2ff; color: #4f46e5;">в процессе</span>
+          <div id="ry-2024" style="display: none;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 9px 4px 9px 12px; border-bottom: 1px solid #f1f5f9;">
+              <span style="font-size: 13px; color: #64748b;">Q3</span>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <span style="font-size: 14px; font-weight: 700; color: #334155;">3.4</span>
+              </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 9px 4px 9px 12px;">
+              <span style="font-size: 13px; color: #64748b;">Q4</span>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <span style="font-size: 14px; font-weight: 700; color: #334155;">3.5</span>
+                <span style="font-size: 12px; color: #22c55e; font-weight: 600;">&#8593;</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -950,6 +987,20 @@ function toggleGoalDetail(id) {
   } else {
     detail.style.display = 'none';
     if (arrow) arrow.style.transform = 'rotate(0deg)';
+  }
+}
+
+/* Toggle rating year collapse */
+function toggleRatingYear(id, headerEl) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  var chevron = headerEl.querySelector('.ry-chevron');
+  if (el.style.display === 'none') {
+    el.style.display = 'block';
+    if (chevron) chevron.style.transform = 'rotate(0deg)';
+  } else {
+    el.style.display = 'none';
+    if (chevron) chevron.style.transform = 'rotate(-90deg)';
   }
 }
 
