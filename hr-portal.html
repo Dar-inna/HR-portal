@@ -281,7 +281,7 @@ tbody tr:last-child td{border-bottom:none}
   <div class="topbar-spacer"></div>
   <div class="topbar-badge">
     <span class="pulse-dot"></span>
-    Оценка H1 2026
+    Оценка Q2 2026
   </div>
   <div class="topbar-icon" data-tooltip="Уведомления">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
@@ -309,7 +309,8 @@ tbody tr:last-child td{border-bottom:none}
         <p style="margin: 0 0 12px; font-size: 13px; color: #64748b;">Senior Software Engineer</p>
         <div style="display: flex; gap: 6px; justify-content: center; flex-wrap: wrap;">
           <span class="badge" style="background: #eef2ff; color: #4f46e5; font-weight: 600;">L5 — Senior</span>
-          <span class="badge badge-success">Активный цикл</span>
+          <span class="badge" style="background: #faf5ff; color: #7c3aed; font-weight: 700; border: 1px solid #e9d5ff;">Форма Q</span>
+          <span class="badge badge-success">Q2 2026</span>
         </div>
       </div>
 
@@ -369,7 +370,7 @@ tbody tr:last-child td{border-bottom:none}
     <div class="card" style="margin-bottom: 24px;">
       <div class="card-header">
         <div>
-          <h3 class="card-title">Путь оценки</h3>
+          <h3 class="card-title">Путь оценки <span style="font-weight:500; font-size:13px; color:#64748b;">Q2 2026</span></h3>
         </div>
         <span class="badge" style="background: #eef2ff; color: #4f46e5; font-weight: 600;">Шаг 3 из 6</span>
       </div>
@@ -770,7 +771,7 @@ tbody tr:last-child td{border-bottom:none}
         <h3 class="card-title">Динамика моих оценок</h3>
       </div>
       <div class="card-content" style="padding: 16px 20px;">
-        <svg viewBox="0 0 280 160" style="width: 100%; height: auto;">
+        <svg viewBox="0 0 300 160" style="width: 100%; height: auto;">
           <defs>
             <linearGradient id="chart-gradient-self" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.3"/>
@@ -783,10 +784,10 @@ tbody tr:last-child td{border-bottom:none}
           </defs>
 
           <!-- Grid lines -->
-          <line x1="40" y1="20" x2="260" y2="20" stroke="#f1f5f9" stroke-width="1"/>
-          <line x1="40" y1="50" x2="260" y2="50" stroke="#f1f5f9" stroke-width="1"/>
-          <line x1="40" y1="80" x2="260" y2="80" stroke="#f1f5f9" stroke-width="1"/>
-          <line x1="40" y1="110" x2="260" y2="110" stroke="#f1f5f9" stroke-width="1"/>
+          <line x1="40" y1="20" x2="280" y2="20" stroke="#f1f5f9" stroke-width="1"/>
+          <line x1="40" y1="50" x2="280" y2="50" stroke="#f1f5f9" stroke-width="1"/>
+          <line x1="40" y1="80" x2="280" y2="80" stroke="#f1f5f9" stroke-width="1"/>
+          <line x1="40" y1="110" x2="280" y2="110" stroke="#f1f5f9" stroke-width="1"/>
 
           <!-- Y axis labels -->
           <text x="32" y="24" text-anchor="end" font-size="9" fill="#94a3b8">5.0</text>
@@ -794,47 +795,55 @@ tbody tr:last-child td{border-bottom:none}
           <text x="32" y="84" text-anchor="end" font-size="9" fill="#94a3b8">4.0</text>
           <text x="32" y="114" text-anchor="end" font-size="9" fill="#94a3b8">3.5</text>
 
-          <!-- X axis labels -->
-          <text x="62" y="140" text-anchor="middle" font-size="8" fill="#94a3b8">H1'24</text>
-          <text x="112" y="140" text-anchor="middle" font-size="8" fill="#94a3b8">H2'24</text>
-          <text x="162" y="140" text-anchor="middle" font-size="8" fill="#94a3b8">H1'25</text>
-          <text x="212" y="140" text-anchor="middle" font-size="8" fill="#94a3b8">H2'25</text>
-          <text x="248" y="140" text-anchor="middle" font-size="8" fill="#94a3b8">H1'26</text>
+          <!-- X axis labels: 7 quarters from Q4'24 to Q2'26 -->
+          <text x="52" y="140" text-anchor="middle" font-size="7.5" fill="#94a3b8">Q4'24</text>
+          <text x="90" y="140" text-anchor="middle" font-size="7.5" fill="#94a3b8">Q1'25</text>
+          <text x="128" y="140" text-anchor="middle" font-size="7.5" fill="#94a3b8">Q2'25</text>
+          <text x="166" y="140" text-anchor="middle" font-size="7.5" fill="#94a3b8">Q3'25</text>
+          <text x="204" y="140" text-anchor="middle" font-size="7.5" fill="#94a3b8">Q4'25</text>
+          <text x="242" y="140" text-anchor="middle" font-size="7.5" fill="#94a3b8">Q1'26</text>
+          <text x="272" y="140" text-anchor="middle" font-size="7.5" fill="#94a3b8">Q2'26</text>
 
-          <!-- Self-rating: 3.8, 4.0, 4.2, 4.5, 4.3 -->
-          <!-- Y mapping: 5.0=20, 4.5=50, 4.0=80, 3.5=110, 3.0=140 => y = 20 + (5.0 - val) * 60 -->
-          <!-- 3.8=>92, 4.0=>80, 4.2=>68, 4.5=>50, 4.3=>62 -->
+          <!-- Self-rating: 3.7, 3.9, 4.0, 4.2, 4.4, 4.5, 4.3 -->
+          <!-- Y mapping: 5.0=20, 4.5=50, 4.0=80, 3.5=110 => y = 20 + (5.0 - val) * 60 -->
+          <!-- 3.7=>98, 3.9=>86, 4.0=>80, 4.2=>68, 4.4=>56, 4.5=>50, 4.3=>62 -->
 
           <!-- Self-assessment fill area -->
-          <polygon points="62,92 112,80 162,68 212,50 248,62 248,125 62,125" fill="url(#chart-gradient-self)"/>
+          <polygon points="52,98 90,86 128,80 166,68 204,56 242,50 272,62 272,125 52,125" fill="url(#chart-gradient-self)"/>
           <!-- Self-assessment line -->
-          <polyline points="62,92 112,80 162,68 212,50 248,62" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <polyline points="52,98 90,86 128,80 166,68 204,56 242,50 272,62" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
           <!-- Self-assessment dots -->
-          <circle cx="62" cy="92" r="4" fill="#7c3aed" stroke="#fff" stroke-width="2"/>
-          <circle cx="112" cy="80" r="4" fill="#7c3aed" stroke="#fff" stroke-width="2"/>
-          <circle cx="162" cy="68" r="4" fill="#7c3aed" stroke="#fff" stroke-width="2"/>
-          <circle cx="212" cy="50" r="4" fill="#7c3aed" stroke="#fff" stroke-width="2"/>
-          <circle cx="248" cy="62" r="4" fill="#7c3aed" stroke="#fff" stroke-width="2"/>
+          <circle cx="52" cy="98" r="3.5" fill="#7c3aed" stroke="#fff" stroke-width="2"/>
+          <circle cx="90" cy="86" r="3.5" fill="#7c3aed" stroke="#fff" stroke-width="2"/>
+          <circle cx="128" cy="80" r="3.5" fill="#7c3aed" stroke="#fff" stroke-width="2"/>
+          <circle cx="166" cy="68" r="3.5" fill="#7c3aed" stroke="#fff" stroke-width="2"/>
+          <circle cx="204" cy="56" r="3.5" fill="#7c3aed" stroke="#fff" stroke-width="2"/>
+          <circle cx="242" cy="50" r="3.5" fill="#7c3aed" stroke="#fff" stroke-width="2"/>
+          <circle cx="272" cy="62" r="3.5" fill="#7c3aed" stroke="#fff" stroke-width="2"/>
 
-          <!-- Final rating: 3.6, 3.9, 4.1, 4.4, — -->
-          <!-- 3.6=>104, 3.9=>86, 4.1=>74, 4.4=>56 -->
+          <!-- Final rating: 3.5, 3.7, 3.9, 4.1, 4.3, 4.4, — -->
+          <!-- 3.5=>110, 3.7=>98, 3.9=>86, 4.1=>74, 4.3=>62, 4.4=>56 -->
 
           <!-- Final rating fill area -->
-          <polygon points="62,104 112,86 162,74 212,56 212,125 62,125" fill="url(#chart-gradient-final)"/>
+          <polygon points="52,110 90,98 128,86 166,74 204,62 242,56 242,125 52,125" fill="url(#chart-gradient-final)"/>
           <!-- Final rating line -->
-          <polyline points="62,104 112,86 162,74 212,56" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6,3"/>
+          <polyline points="52,110 90,98 128,86 166,74 204,62 242,56" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6,3"/>
           <!-- Final rating dots -->
-          <circle cx="62" cy="104" r="3.5" fill="#22c55e" stroke="#fff" stroke-width="2"/>
-          <circle cx="112" cy="86" r="3.5" fill="#22c55e" stroke="#fff" stroke-width="2"/>
-          <circle cx="162" cy="74" r="3.5" fill="#22c55e" stroke="#fff" stroke-width="2"/>
-          <circle cx="212" cy="56" r="3.5" fill="#22c55e" stroke="#fff" stroke-width="2"/>
+          <circle cx="52" cy="110" r="3" fill="#22c55e" stroke="#fff" stroke-width="2"/>
+          <circle cx="90" cy="98" r="3" fill="#22c55e" stroke="#fff" stroke-width="2"/>
+          <circle cx="128" cy="86" r="3" fill="#22c55e" stroke="#fff" stroke-width="2"/>
+          <circle cx="166" cy="74" r="3" fill="#22c55e" stroke="#fff" stroke-width="2"/>
+          <circle cx="204" cy="62" r="3" fill="#22c55e" stroke="#fff" stroke-width="2"/>
+          <circle cx="242" cy="56" r="3" fill="#22c55e" stroke="#fff" stroke-width="2"/>
 
           <!-- Value labels on self-rating line -->
-          <text x="62" y="86" text-anchor="middle" font-size="8" fill="#7c3aed" font-weight="600">3.8</text>
-          <text x="112" y="74" text-anchor="middle" font-size="8" fill="#7c3aed" font-weight="600">4.0</text>
-          <text x="162" y="62" text-anchor="middle" font-size="8" fill="#7c3aed" font-weight="600">4.2</text>
-          <text x="212" y="44" text-anchor="middle" font-size="8" fill="#7c3aed" font-weight="600">4.5</text>
-          <text x="248" y="56" text-anchor="middle" font-size="8" fill="#7c3aed" font-weight="600">4.3</text>
+          <text x="52" y="92" text-anchor="middle" font-size="7" fill="#7c3aed" font-weight="600">3.7</text>
+          <text x="90" y="80" text-anchor="middle" font-size="7" fill="#7c3aed" font-weight="600">3.9</text>
+          <text x="128" y="74" text-anchor="middle" font-size="7" fill="#7c3aed" font-weight="600">4.0</text>
+          <text x="166" y="62" text-anchor="middle" font-size="7" fill="#7c3aed" font-weight="600">4.2</text>
+          <text x="204" y="50" text-anchor="middle" font-size="7" fill="#7c3aed" font-weight="600">4.4</text>
+          <text x="242" y="44" text-anchor="middle" font-size="7" fill="#7c3aed" font-weight="600">4.5</text>
+          <text x="272" y="56" text-anchor="middle" font-size="7" fill="#7c3aed" font-weight="600">4.3</text>
         </svg>
 
         <!-- Legend -->
@@ -859,12 +868,20 @@ tbody tr:last-child td{border-bottom:none}
       <div class="card-content" style="padding: 8px 16px 12px;">
 
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 4px; border-bottom: 1px solid #f1f5f9;">
-          <span style="font-size: 13px; color: #64748b;">H1 2024</span>
-          <span style="font-size: 14px; font-weight: 700; color: #334155;">3.6</span>
+          <span style="font-size: 13px; color: #64748b;">Q4 2024</span>
+          <span style="font-size: 14px; font-weight: 700; color: #334155;">3.5</span>
         </div>
 
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 4px; border-bottom: 1px solid #f1f5f9;">
-          <span style="font-size: 13px; color: #64748b;">H2 2024</span>
+          <span style="font-size: 13px; color: #64748b;">Q1 2025</span>
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <span style="font-size: 14px; font-weight: 700; color: #334155;">3.7</span>
+            <span style="font-size: 12px; color: #22c55e; font-weight: 600;">&#8593;</span>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 4px; border-bottom: 1px solid #f1f5f9;">
+          <span style="font-size: 13px; color: #64748b;">Q2 2025</span>
           <div style="display: flex; align-items: center; gap: 6px;">
             <span style="font-size: 14px; font-weight: 700; color: #334155;">3.9</span>
             <span style="font-size: 12px; color: #22c55e; font-weight: 600;">&#8593;</span>
@@ -872,7 +889,7 @@ tbody tr:last-child td{border-bottom:none}
         </div>
 
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 4px; border-bottom: 1px solid #f1f5f9;">
-          <span style="font-size: 13px; color: #64748b;">H1 2025</span>
+          <span style="font-size: 13px; color: #64748b;">Q3 2025</span>
           <div style="display: flex; align-items: center; gap: 6px;">
             <span style="font-size: 14px; font-weight: 700; color: #334155;">4.1</span>
             <span style="font-size: 12px; color: #22c55e; font-weight: 600;">&#8593;</span>
@@ -880,7 +897,15 @@ tbody tr:last-child td{border-bottom:none}
         </div>
 
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 4px; border-bottom: 1px solid #f1f5f9;">
-          <span style="font-size: 13px; color: #64748b;">H2 2025</span>
+          <span style="font-size: 13px; color: #64748b;">Q4 2025</span>
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <span style="font-size: 14px; font-weight: 700; color: #334155;">4.3</span>
+            <span style="font-size: 12px; color: #22c55e; font-weight: 600;">&#8593;</span>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 4px; border-bottom: 1px solid #f1f5f9;">
+          <span style="font-size: 13px; color: #64748b;">Q1 2026</span>
           <div style="display: flex; align-items: center; gap: 6px;">
             <span style="font-size: 14px; font-weight: 700; color: #334155;">4.4</span>
             <span style="font-size: 12px; color: #22c55e; font-weight: 600;">&#8593;</span>
@@ -888,7 +913,7 @@ tbody tr:last-child td{border-bottom:none}
         </div>
 
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 4px;">
-          <span style="font-size: 13px; color: #64748b;">H1 2026</span>
+          <span style="font-size: 13px; color: #64748b;">Q2 2026</span>
           <div style="display: flex; align-items: center; gap: 6px;">
             <span style="font-size: 14px; font-weight: 600; color: #94a3b8;">&mdash;</span>
             <span class="badge" style="font-size: 9px; background: #eef2ff; color: #4f46e5;">в процессе</span>
@@ -1037,8 +1062,8 @@ function sortTable(colIndex) {
   <!-- Header -->
   <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:24px;">
     <div>
-      <h1 style="font-size:24px; font-weight:700; color:#1e293b; margin:0 0 4px 0;">Оценка эффективности</h1>
-      <p style="font-size:14px; color:#64748b; margin:0;">Самооценка &middot; Оценка собственных достижений</p>
+      <h1 style="font-size:24px; font-weight:700; color:#1e293b; margin:0 0 4px 0;">Оценка эффективности <span class="badge" style="font-size:12px; background:#faf5ff; color:#7c3aed; border:1px solid #e9d5ff; vertical-align:middle; margin-left:8px;">Форма Q</span></h1>
+      <p style="font-size:14px; color:#64748b; margin:0;">Самооценка &middot; Q2 2026 &middot; Апр&ndash;Июн 2026</p>
     </div>
     <div style="display:flex; gap:8px;">
       <button class="btn btn-outline">Сохранить черновик</button>
@@ -1146,7 +1171,7 @@ function sortTable(colIndex) {
 
   <!-- Header -->
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px;">
-    <h1 style="font-size:24px; font-weight:700; color:#1e293b; margin:0;">История результатов</h1>
+    <h1 style="font-size:24px; font-weight:700; color:#1e293b; margin:0;">История результатов <span class="badge" style="font-size:12px; background:#faf5ff; color:#7c3aed; border:1px solid #e9d5ff; vertical-align:middle; margin-left:8px;">Форма Q</span></h1>
     <button class="btn btn-outline">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px; vertical-align:middle;"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10,9 9,9 8,9"/></svg>
       Экспорт в PDF
@@ -1195,7 +1220,7 @@ function sortTable(colIndex) {
         </div>
         <div>
           <div style="font-size:12px; color:#64748b;">Циклов оценки</div>
-          <div style="font-size:22px; font-weight:700; color:#1e293b;">5</div>
+          <div style="font-size:22px; font-weight:700; color:#1e293b;">8</div>
         </div>
       </div>
     </div>
@@ -1222,26 +1247,31 @@ function sortTable(colIndex) {
           <text x="40" y="104" text-anchor="end" fill="#94a3b8" font-size="11">3.0</text>
           <text x="40" y="144" text-anchor="end" fill="#94a3b8" font-size="11">2.0</text>
           <text x="40" y="184" text-anchor="end" fill="#94a3b8" font-size="11">1.0</text>
-          <!-- H1'24 bars -->
-          <rect x="70" y="116" width="20" height="64" rx="3" fill="#a78bfa" opacity="0.85"/>
-          <rect x="94" y="108" width="20" height="72" rx="3" fill="#4ade80" opacity="0.85"/>
-          <rect x="118" y="112" width="20" height="68" rx="3" fill="#4f46e5" opacity="0.85"/>
-          <text x="104" y="198" text-anchor="middle" fill="#64748b" font-size="11">H1'24</text>
-          <!-- H2'24 bars -->
-          <rect x="160" y="104" width="20" height="76" rx="3" fill="#a78bfa" opacity="0.85"/>
-          <rect x="184" y="96" width="20" height="84" rx="3" fill="#4ade80" opacity="0.85"/>
-          <rect x="208" y="100" width="20" height="80" rx="3" fill="#4f46e5" opacity="0.85"/>
-          <text x="194" y="198" text-anchor="middle" fill="#64748b" font-size="11">H2'24</text>
-          <!-- H1'25 bars -->
-          <rect x="250" y="88" width="20" height="92" rx="3" fill="#a78bfa" opacity="0.85"/>
-          <rect x="274" y="80" width="20" height="100" rx="3" fill="#4ade80" opacity="0.85"/>
-          <rect x="298" y="84" width="20" height="96" rx="3" fill="#4f46e5" opacity="0.85"/>
-          <text x="284" y="198" text-anchor="middle" fill="#64748b" font-size="11">H1'25</text>
-          <!-- H2'25 bars -->
-          <rect x="340" y="72" width="20" height="108" rx="3" fill="#a78bfa" opacity="0.85"/>
-          <rect x="364" y="64" width="20" height="116" rx="3" fill="#4ade80" opacity="0.85"/>
-          <rect x="388" y="68" width="20" height="112" rx="3" fill="#4f46e5" opacity="0.85"/>
-          <text x="374" y="198" text-anchor="middle" fill="#64748b" font-size="11">H2'25</text>
+          <!-- Q1'25 bars -->
+          <rect x="60" y="112" width="14" height="68" rx="3" fill="#a78bfa" opacity="0.85"/>
+          <rect x="78" y="104" width="14" height="76" rx="3" fill="#4ade80" opacity="0.85"/>
+          <rect x="96" y="108" width="14" height="72" rx="3" fill="#4f46e5" opacity="0.85"/>
+          <text x="85" y="198" text-anchor="middle" fill="#64748b" font-size="10">Q1'25</text>
+          <!-- Q2'25 bars -->
+          <rect x="130" y="104" width="14" height="76" rx="3" fill="#a78bfa" opacity="0.85"/>
+          <rect x="148" y="96" width="14" height="84" rx="3" fill="#4ade80" opacity="0.85"/>
+          <rect x="166" y="100" width="14" height="80" rx="3" fill="#4f46e5" opacity="0.85"/>
+          <text x="155" y="198" text-anchor="middle" fill="#64748b" font-size="10">Q2'25</text>
+          <!-- Q3'25 bars -->
+          <rect x="200" y="88" width="14" height="92" rx="3" fill="#a78bfa" opacity="0.85"/>
+          <rect x="218" y="80" width="14" height="100" rx="3" fill="#4ade80" opacity="0.85"/>
+          <rect x="236" y="84" width="14" height="96" rx="3" fill="#4f46e5" opacity="0.85"/>
+          <text x="225" y="198" text-anchor="middle" fill="#64748b" font-size="10">Q3'25</text>
+          <!-- Q4'25 bars -->
+          <rect x="270" y="76" width="14" height="104" rx="3" fill="#a78bfa" opacity="0.85"/>
+          <rect x="288" y="68" width="14" height="112" rx="3" fill="#4ade80" opacity="0.85"/>
+          <rect x="306" y="72" width="14" height="108" rx="3" fill="#4f46e5" opacity="0.85"/>
+          <text x="295" y="198" text-anchor="middle" fill="#64748b" font-size="10">Q4'25</text>
+          <!-- Q1'26 bars -->
+          <rect x="340" y="68" width="14" height="112" rx="3" fill="#a78bfa" opacity="0.85"/>
+          <rect x="358" y="60" width="14" height="120" rx="3" fill="#4ade80" opacity="0.85"/>
+          <rect x="376" y="64" width="14" height="116" rx="3" fill="#4f46e5" opacity="0.85"/>
+          <text x="365" y="198" text-anchor="middle" fill="#64748b" font-size="10">Q1'26</text>
         </svg>
         <!-- Legend -->
         <div style="display:flex; gap:16px; justify-content:center; margin-top:8px;">
@@ -1305,8 +1335,8 @@ function sortTable(colIndex) {
     <div class="card-header" style="cursor:pointer;" onclick="toggleHistoryEntry('history-1')">
       <div style="display:flex; align-items:center; justify-content:space-between; width:100%;">
         <div style="display:flex; align-items:center; gap:16px;">
-          <div class="card-title" style="margin:0;">Оценка H2 2025</div>
-          <span style="font-size:13px; color:#64748b;">Июл&ndash;Дек 2025</span>
+          <div class="card-title" style="margin:0;">Оценка Q4 2025</div>
+          <span style="font-size:13px; color:#64748b;">Окт&ndash;Дек 2025</span>
           <span style="font-size:18px; font-weight:700; color:#4f46e5;">4.4</span>
           <span class="badge badge-success">Превышает ожидания</span>
         </div>
@@ -1349,8 +1379,8 @@ function sortTable(colIndex) {
     <div class="card-header" style="cursor:pointer;" onclick="toggleHistoryEntry('history-2')">
       <div style="display:flex; align-items:center; justify-content:space-between; width:100%;">
         <div style="display:flex; align-items:center; gap:16px;">
-          <div class="card-title" style="margin:0;">Оценка H1 2025</div>
-          <span style="font-size:13px; color:#64748b;">Янв&ndash;Июн 2025</span>
+          <div class="card-title" style="margin:0;">Оценка Q3 2025</div>
+          <span style="font-size:13px; color:#64748b;">Июл&ndash;Сен 2025</span>
           <span style="font-size:18px; font-weight:700; color:#4f46e5;">4.1</span>
           <span class="badge badge-success">Превышает ожидания</span>
         </div>
@@ -1391,8 +1421,8 @@ function sortTable(colIndex) {
     <div class="card-header" style="cursor:pointer;" onclick="toggleHistoryEntry('history-3')">
       <div style="display:flex; align-items:center; justify-content:space-between; width:100%;">
         <div style="display:flex; align-items:center; gap:16px;">
-          <div class="card-title" style="margin:0;">Оценка H2 2024</div>
-          <span style="font-size:13px; color:#64748b;">Июл&ndash;Дек 2024</span>
+          <div class="card-title" style="margin:0;">Оценка Q2 2025</div>
+          <span style="font-size:13px; color:#64748b;">Апр&ndash;Июн 2025</span>
           <span style="font-size:18px; font-weight:700; color:#4f46e5;">3.9</span>
           <span class="badge badge-warning">Соответствует ожиданиям+</span>
         </div>
@@ -1458,7 +1488,7 @@ function sortTable(colIndex) {
       <div class="card-header">
         <div style="display:flex; align-items:center; gap:10px;">
           <span style="width:8px; height:8px; border-radius:50%; background:#22c55e; display:inline-block;"></span>
-          <div class="card-title">Оценка H1 2026</div>
+          <div class="card-title">Оценка Q2 2026</div>
           <span class="badge badge-success">Активный</span>
         </div>
       </div>
@@ -1466,7 +1496,7 @@ function sortTable(colIndex) {
         <div class="grid-2" style="gap:16px; margin-bottom:20px;">
           <div>
             <label style="display:block; font-size:12px; font-weight:500; color:#64748b; margin-bottom:6px;">Начало периода</label>
-            <input type="date" class="form-input" value="2026-01-01" style="width:100%;">
+            <input type="date" class="form-input" value="2026-04-01" style="width:100%;">
           </div>
           <div>
             <label style="display:block; font-size:12px; font-weight:500; color:#64748b; margin-bottom:6px;">Конец периода</label>
@@ -1546,20 +1576,20 @@ function sortTable(colIndex) {
           </thead>
           <tbody>
             <tr>
-              <td style="padding:12px 16px; font-size:13px; color:#1e293b;">Оценка H2 2025</td>
-              <td style="padding:12px 16px; font-size:13px; color:#64748b;">Июл&ndash;Дек 2025</td>
+              <td style="padding:12px 16px; font-size:13px; color:#1e293b;">Оценка Q1 2026</td>
+              <td style="padding:12px 16px; font-size:13px; color:#64748b;">Янв&ndash;Мар 2026</td>
               <td style="padding:12px 16px; font-size:13px; color:#64748b;">1 247</td>
               <td style="padding:12px 16px;"><span class="badge badge-success">Завершен</span></td>
             </tr>
             <tr>
-              <td style="padding:12px 16px; font-size:13px; color:#1e293b;">Оценка H1 2025</td>
-              <td style="padding:12px 16px; font-size:13px; color:#64748b;">Янв&ndash;Июн 2025</td>
+              <td style="padding:12px 16px; font-size:13px; color:#1e293b;">Оценка Q4 2025</td>
+              <td style="padding:12px 16px; font-size:13px; color:#64748b;">Окт&ndash;Дек 2025</td>
               <td style="padding:12px 16px; font-size:13px; color:#64748b;">1 198</td>
               <td style="padding:12px 16px;"><span class="badge badge-success">Завершен</span></td>
             </tr>
             <tr>
-              <td style="padding:12px 16px; font-size:13px; color:#1e293b;">Оценка H2 2024</td>
-              <td style="padding:12px 16px; font-size:13px; color:#64748b;">Июл&ndash;Дек 2024</td>
+              <td style="padding:12px 16px; font-size:13px; color:#1e293b;">Оценка Q3 2025</td>
+              <td style="padding:12px 16px; font-size:13px; color:#64748b;">Июл&ndash;Сен 2025</td>
               <td style="padding:12px 16px; font-size:13px; color:#64748b;">1 102</td>
               <td style="padding:12px 16px;"><span class="badge badge-success">Завершен</span></td>
             </tr>
@@ -1822,7 +1852,7 @@ var goalData = [
   {
     id: 1, title: 'Увеличение выручки на 20%', weight: 30, status: 'В процессе', statusClass: 'badge-warning',
     progress: 75, score: 4,
-    description: 'Обеспечить рост совокупной выручки подразделения на 20% по сравнению с предыдущим полугодием.',
+    description: 'Обеспечить рост совокупной выручки подразделения на 20% по сравнению с предыдущим кварталом.',
     kpis: ['Объем продаж: 8.4M / 10M', 'Новых клиентов: 12 / 15', 'Средний чек: +18%']
   },
   {
