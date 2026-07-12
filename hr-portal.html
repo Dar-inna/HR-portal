@@ -413,19 +413,19 @@ tbody tr:last-child td{border-bottom:none}
       <div class="card-content" style="padding: 16px 20px;">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
           <div>
-            <div style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px;">Департамент</div>
+            <div style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px;" data-i18n="lbl_dept">Департамент</div>
             <div style="font-size: 13px; color: #334155; font-weight: 500;">Департамент информационных технологий</div>
           </div>
           <div>
-            <div style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px;">Управление</div>
+            <div style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px;" data-i18n="lbl_mgmt">Управление</div>
             <div style="font-size: 13px; color: #334155; font-weight: 500;">Управление разработки и архитектуры</div>
           </div>
           <div>
-            <div style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px;">Email</div>
+            <div style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px;" data-i18n="lbl_email">Email</div>
             <div style="font-size: 13px; color: #334155; font-weight: 500;">a.petrov@company.ru</div>
           </div>
           <div>
-            <div style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px;">Табельный номер</div>
+            <div style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px;" data-i18n="lbl_empnum">Табельный номер</div>
             <div style="font-size: 13px; color: #334155; font-weight: 500;">00322322</div>
           </div>
         </div>
@@ -434,7 +434,7 @@ tbody tr:last-child td{border-bottom:none}
       <div class="separator"></div>
 
       <div class="card-content" style="padding: 16px 20px;">
-        <div style="font-size: 12px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; font-weight: 600;">Руководство</div>
+        <div style="font-size: 12px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; font-weight: 600;" data-i18n="lbl_management">Руководство</div>
 
         <div style="display: flex; align-items: center; gap: 10px; padding: 10px; border-radius: 8px; background: #f8fafc; margin-bottom: 8px;">
           <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ирина Волкова" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover; flex-shrink: 0;"/>
@@ -442,7 +442,7 @@ tbody tr:last-child td{border-bottom:none}
             <div style="font-size: 13px; font-weight: 600; color: #1e293b;">Ирина Волкова</div>
             <div style="font-size: 11px; color: #64748b;">Engineering Manager</div>
           </div>
-          <span class="badge" style="font-size: 10px; background: #dbeafe; color: #2563eb;">Непосредственный</span>
+          <span class="badge" data-i18n="lbl_direct_mgr" style="font-size: 10px; background: #dbeafe; color: #2563eb;">Непосредственный</span>
         </div>
 
         <div style="display: flex; align-items: center; gap: 10px; padding: 10px; border-radius: 8px; background: #f8fafc;">
@@ -451,7 +451,7 @@ tbody tr:last-child td{border-bottom:none}
             <div style="font-size: 13px; font-weight: 600; color: #1e293b;">Дмитрий Козлов</div>
             <div style="font-size: 11px; color: #64748b;">VP of Engineering</div>
           </div>
-          <span class="badge" style="font-size: 10px; background: #f3e8ff; color: #7c3aed;">Вышестоящий</span>
+          <span class="badge" data-i18n="lbl_senior_mgr" style="font-size: 10px; background: #f3e8ff; color: #7c3aed;">Вышестоящий</span>
         </div>
       </div>
     </div>
@@ -518,9 +518,9 @@ tbody tr:last-child td{border-bottom:none}
     <div class="card" id="goals-card">
       <div class="card-header" style="cursor: pointer;" onclick="toggleGoalsBlock()">
         <div>
-          <h3 class="card-title" style="margin-bottom: 4px;">Цели и KPI</h3>
+          <h3 class="card-title" style="margin-bottom: 4px;" data-i18n="goals_title">Цели и KPI</h3>
           <div style="display: flex; align-items: center; gap: 10px;">
-            <span style="font-size: 13px; color: #64748b;">Общий прогресс: 62%</span>
+            <span style="font-size: 13px; color: #64748b;"><span data-i18n="progress_label">Общий прогресс:</span> 62%</span>
             <div class="progress-bar" style="width: 120px; height: 6px;">
               <div class="progress-fill" style="width: 62%;"></div>
             </div>
@@ -535,14 +535,14 @@ tbody tr:last-child td{border-bottom:none}
         <!-- Toolbar -->
         <div style="padding: 12px 20px; border-bottom: 1px solid #e2e8f0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
           <div style="position: relative; flex: 1; min-width: 180px;">
-            <input type="text" id="goals-search" placeholder="Поиск по целям..." oninput="filterGoals()" style="width: 100%; padding: 7px 12px 7px 32px; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 13px; outline: none; background: #f8fafc;">
+            <input type="text" id="goals-search" placeholder="Поиск по целям..." oninput="filterGoals()" data-i18n-placeholder="goals_search_ph" style="width: 100%; padding: 7px 12px 7px 32px; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 13px; outline: none; background: #f8fafc;">
             <svg style="position: absolute; left: 9px; top: 50%; transform: translateY(-50%); width: 14px; height: 14px; color: #94a3b8;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
           </div>
           <div style="display: flex; gap: 4px;" id="category-filters">
-            <button class="btn btn-primary filter-btn active" data-filter="all" onclick="filterByCategory('all', this)" style="font-size: 11px; padding: 5px 10px;">Все</button>
-            <button class="btn btn-outline filter-btn" data-filter="team-kpi" onclick="filterByCategory('team-kpi', this)" style="font-size: 11px; padding: 5px 10px;">Командные KPI</button>
-            <button class="btn btn-outline filter-btn" data-filter="individual-kpi" onclick="filterByCategory('individual-kpi', this)" style="font-size: 11px; padding: 5px 10px;">Индивидуальные KPI</button>
-            <button class="btn btn-outline filter-btn" data-filter="jira" onclick="filterByCategory('jira', this)" style="font-size: 11px; padding: 5px 10px;">Оценка Jira</button>
+            <button class="btn btn-primary filter-btn active" data-filter="all" data-i18n="filter_all" onclick="filterByCategory('all', this)" style="font-size: 11px; padding: 5px 10px;">Все</button>
+            <button class="btn btn-outline filter-btn" data-filter="team-kpi" data-i18n="filter_team_kpi" onclick="filterByCategory('team-kpi', this)" style="font-size: 11px; padding: 5px 10px;">Командные KPI</button>
+            <button class="btn btn-outline filter-btn" data-filter="individual-kpi" data-i18n="filter_ind_kpi" onclick="filterByCategory('individual-kpi', this)" style="font-size: 11px; padding: 5px 10px;">Индивидуальные KPI</button>
+            <button class="btn btn-outline filter-btn" data-filter="jira" data-i18n="filter_jira" onclick="filterByCategory('jira', this)" style="font-size: 11px; padding: 5px 10px;">Оценка Jira</button>
           </div>
         </div>
 
@@ -552,13 +552,13 @@ tbody tr:last-child td{border-bottom:none}
             <thead>
               <tr style="background: #f8fafc; border-bottom: 2px solid #e2e8f0;">
                 <th style="padding: 10px 8px; width: 32px;"></th>
-                <th style="padding: 10px 8px; text-align: left; color: #64748b; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; user-select: none;" onclick="sortTable(1)">Цель <span style="color: #cbd5e1;">&#8597;</span></th>
-                <th style="padding: 10px 8px; text-align: left; color: #64748b; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; user-select: none;" onclick="sortTable(2)">Категория <span style="color: #cbd5e1;">&#8597;</span></th>
-                <th style="padding: 10px 8px; text-align: center; color: #64748b; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; user-select: none;" onclick="sortTable(3)">Вес <span style="color: #cbd5e1;">&#8597;</span></th>
-                <th style="padding: 10px 8px; text-align: left; color: #64748b; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; user-select: none; min-width: 100px;" onclick="sortTable(4)">Прогресс <span style="color: #cbd5e1;">&#8597;</span></th>
-                <th style="padding: 10px 8px; text-align: center; color: #64748b; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; user-select: none;" onclick="sortTable(5)">Статус <span style="color: #cbd5e1;">&#8597;</span></th>
-                <th style="padding: 10px 8px; text-align: center; color: #64748b; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; user-select: none;" onclick="sortTable(6)">Срок <span style="color: #cbd5e1;">&#8597;</span></th>
-                <th style="padding: 10px 8px; text-align: center; color: #64748b; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px;">Оценка</th>
+                <th style="padding: 10px 8px; text-align: left; color: #64748b; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; user-select: none;" onclick="sortTable(1)"><span data-i18n="th_goal">Цель</span> <span style="color: #cbd5e1;">&#8597;</span></th>
+                <th style="padding: 10px 8px; text-align: left; color: #64748b; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; user-select: none;" onclick="sortTable(2)"><span data-i18n="th_category">Категория</span> <span style="color: #cbd5e1;">&#8597;</span></th>
+                <th style="padding: 10px 8px; text-align: center; color: #64748b; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; user-select: none;" onclick="sortTable(3)"><span data-i18n="th_weight">Вес</span> <span style="color: #cbd5e1;">&#8597;</span></th>
+                <th style="padding: 10px 8px; text-align: left; color: #64748b; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; user-select: none; min-width: 100px;" onclick="sortTable(4)"><span data-i18n="th_progress">Прогресс</span> <span style="color: #cbd5e1;">&#8597;</span></th>
+                <th style="padding: 10px 8px; text-align: center; color: #64748b; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; user-select: none;" onclick="sortTable(5)"><span data-i18n="th_status">Статус</span> <span style="color: #cbd5e1;">&#8597;</span></th>
+                <th style="padding: 10px 8px; text-align: center; color: #64748b; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; user-select: none;" onclick="sortTable(6)"><span data-i18n="th_deadline">Срок</span> <span style="color: #cbd5e1;">&#8597;</span></th>
+                <th style="padding: 10px 8px; text-align: center; color: #64748b; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px;" data-i18n="th_score">Оценка</th>
               </tr>
             </thead>
             <tbody id="goals-tbody">
@@ -576,8 +576,8 @@ tbody tr:last-child td{border-bottom:none}
               <tr class="goal-row" data-category="team-kpi" onclick="toggleGoalDetail('goal-1')" style="cursor: pointer; border-bottom: 1px solid #f1f5f9; transition: background 0.15s;">
                 <td style="padding: 12px 8px; text-align: center;"><span class="expand-arrow" id="arrow-goal-1" style="display: inline-block; transition: transform 0.2s; color: #94a3b8; font-size: 11px;">&#9654;</span></td>
                 <td style="padding: 12px 8px; font-weight: 500; color: #1e293b;">Миграция на микросервисную архитектуру</td>
-                <td style="padding: 12px 8px;"><span class="badge" style="background: #dbeafe; color: #2563eb; font-size: 11px;">Командные KPI</span></td>
-                <td style="padding: 12px 8px; text-align: center; font-weight: 600; color: #334155;">30%</td>
+                <td style="padding: 12px 8px;"><span class="badge cat-badge" data-i18n="badge_team_kpi" style="background: #dbeafe; color: #2563eb; font-size: 11px;">Командные KPI</span></td>
+                <td style="padding: 12px 8px; text-align: center; font-weight: 600; color: #334155;">10%</td>
                 <td style="padding: 12px 8px;">
                   <div style="display: flex; align-items: center; gap: 8px;">
                     <div class="progress-bar" style="flex: 1; height: 6px;"><div class="progress-fill" style="width: 65%;"></div></div>
@@ -607,8 +607,8 @@ tbody tr:last-child td{border-bottom:none}
               <tr class="goal-row" data-category="team-kpi" onclick="toggleGoalDetail('goal-2')" style="cursor: pointer; border-bottom: 1px solid #f1f5f9; transition: background 0.15s;">
                 <td style="padding: 12px 8px; text-align: center;"><span class="expand-arrow" id="arrow-goal-2" style="display: inline-block; transition: transform 0.2s; color: #94a3b8; font-size: 11px;">&#9654;</span></td>
                 <td style="padding: 12px 8px; font-weight: 500; color: #1e293b;">Повышение производительности API</td>
-                <td style="padding: 12px 8px;"><span class="badge" style="background: #dbeafe; color: #2563eb; font-size: 11px;">Командные KPI</span></td>
-                <td style="padding: 12px 8px; text-align: center; font-weight: 600; color: #334155;">25%</td>
+                <td style="padding: 12px 8px;"><span class="badge cat-badge" data-i18n="badge_team_kpi" style="background: #dbeafe; color: #2563eb; font-size: 11px;">Командные KPI</span></td>
+                <td style="padding: 12px 8px; text-align: center; font-weight: 600; color: #334155;">10%</td>
                 <td style="padding: 12px 8px;">
                   <div style="display: flex; align-items: center; gap: 8px;">
                     <div class="progress-bar" style="flex: 1; height: 6px;"><div class="progress-fill" style="width: 100%; background: linear-gradient(90deg, #22c55e, #16a34a);"></div></div>
@@ -647,7 +647,7 @@ tbody tr:last-child td{border-bottom:none}
               <tr class="goal-row" data-category="individual-kpi" onclick="toggleGoalDetail('goal-3')" style="cursor: pointer; border-bottom: 1px solid #f1f5f9; transition: background 0.15s;">
                 <td style="padding: 12px 8px; text-align: center;"><span class="expand-arrow" id="arrow-goal-3" style="display: inline-block; transition: transform 0.2s; color: #94a3b8; font-size: 11px;">&#9654;</span></td>
                 <td style="padding: 12px 8px; font-weight: 500; color: #1e293b;">Менторство junior-разработчиков</td>
-                <td style="padding: 12px 8px;"><span class="badge" style="background: #fef3c7; color: #d97706; font-size: 11px;">Индивид. KPI</span></td>
+                <td style="padding: 12px 8px;"><span class="badge cat-badge" data-i18n="badge_ind_kpi" style="background: #fef3c7; color: #d97706; font-size: 11px;">Индивид. KPI</span></td>
                 <td style="padding: 12px 8px; text-align: center; font-weight: 600; color: #334155;">15%</td>
                 <td style="padding: 12px 8px;">
                   <div style="display: flex; align-items: center; gap: 8px;">
@@ -678,7 +678,7 @@ tbody tr:last-child td{border-bottom:none}
               <tr class="goal-row" data-category="individual-kpi" onclick="toggleGoalDetail('goal-4')" style="cursor: pointer; border-bottom: 1px solid #f1f5f9; transition: background 0.15s;">
                 <td style="padding: 12px 8px; text-align: center;"><span class="expand-arrow" id="arrow-goal-4" style="display: inline-block; transition: transform 0.2s; color: #94a3b8; font-size: 11px;">&#9654;</span></td>
                 <td style="padding: 12px 8px; font-weight: 500; color: #1e293b;">Внедрение CI/CD для новых сервисов</td>
-                <td style="padding: 12px 8px;"><span class="badge" style="background: #fef3c7; color: #d97706; font-size: 11px;">Индивид. KPI</span></td>
+                <td style="padding: 12px 8px;"><span class="badge cat-badge" data-i18n="badge_ind_kpi" style="background: #fef3c7; color: #d97706; font-size: 11px;">Индивид. KPI</span></td>
                 <td style="padding: 12px 8px; text-align: center; font-weight: 600; color: #334155;">15%</td>
                 <td style="padding: 12px 8px;">
                   <div style="display: flex; align-items: center; gap: 8px;">
@@ -718,8 +718,8 @@ tbody tr:last-child td{border-bottom:none}
               <tr class="goal-row" data-category="jira" onclick="toggleGoalDetail('goal-5')" style="cursor: pointer; border-bottom: 1px solid #f1f5f9; transition: background 0.15s;">
                 <td style="padding: 12px 8px; text-align: center;"><span class="expand-arrow" id="arrow-goal-5" style="display: inline-block; transition: transform 0.2s; color: #94a3b8; font-size: 11px;">&#9654;</span></td>
                 <td style="padding: 12px 8px; font-weight: 500; color: #1e293b;">Документирование архитектуры</td>
-                <td style="padding: 12px 8px;"><span class="badge" style="background: #ede9fe; color: #7c3aed; font-size: 11px;">Jira</span></td>
-                <td style="padding: 12px 8px; text-align: center; font-weight: 600; color: #334155;">10%</td>
+                <td style="padding: 12px 8px;"><span class="badge cat-badge" data-i18n="badge_jira" style="background: #ede9fe; color: #7c3aed; font-size: 11px;">Jira</span></td>
+                <td style="padding: 12px 8px; text-align: center; font-weight: 600; color: #334155;">30%</td>
                 <td style="padding: 12px 8px;">
                   <div style="display: flex; align-items: center; gap: 8px;">
                     <div class="progress-bar" style="flex: 1; height: 6px;"><div class="progress-fill" style="width: 25%; background: linear-gradient(90deg, #ef4444, #f87171);"></div></div>
@@ -749,8 +749,8 @@ tbody tr:last-child td{border-bottom:none}
               <tr class="goal-row" data-category="jira" onclick="toggleGoalDetail('goal-6')" style="cursor: pointer; border-bottom: 1px solid #f1f5f9; transition: background 0.15s;">
                 <td style="padding: 12px 8px; text-align: center;"><span class="expand-arrow" id="arrow-goal-6" style="display: inline-block; transition: transform 0.2s; color: #94a3b8; font-size: 11px;">&#9654;</span></td>
                 <td style="padding: 12px 8px; font-weight: 500; color: #1e293b;">Сертификация AWS Solutions Architect</td>
-                <td style="padding: 12px 8px;"><span class="badge" style="background: #ede9fe; color: #7c3aed; font-size: 11px;">Jira</span></td>
-                <td style="padding: 12px 8px; text-align: center; font-weight: 600; color: #334155;">5%</td>
+                <td style="padding: 12px 8px;"><span class="badge cat-badge" data-i18n="badge_jira" style="background: #ede9fe; color: #7c3aed; font-size: 11px;">Jira</span></td>
+                <td style="padding: 12px 8px; text-align: center; font-weight: 600; color: #334155;">20%</td>
                 <td style="padding: 12px 8px;">
                   <div style="display: flex; align-items: center; gap: 8px;">
                     <div class="progress-bar" style="flex: 1; height: 6px;"><div class="progress-fill" style="width: 0%;"></div></div>
@@ -795,10 +795,10 @@ tbody tr:last-child td{border-bottom:none}
     <!-- Deadline Card -->
     <div class="card" style="overflow: hidden; margin-bottom: 20px;">
       <div style="background: linear-gradient(135deg, #f97316, #fb923c, #fdba74); padding: 24px; text-align: center; color: #fff;">
-        <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 1px; opacity: 0.9; margin-bottom: 4px;">Текущий дедлайн</div>
-        <div style="font-size: 15px; font-weight: 600; margin-bottom: 12px;">Самооценка</div>
+        <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 1px; opacity: 0.9; margin-bottom: 4px;" data-i18n="deadline_title">Текущий дедлайн</div>
+        <div style="font-size: 15px; font-weight: 600; margin-bottom: 12px;" data-i18n="deadline_sub">Самооценка</div>
         <div style="font-size: 48px; font-weight: 800; line-height: 1; margin-bottom: 8px;">17</div>
-        <div style="font-size: 16px; font-weight: 600; margin-bottom: 4px;">дней</div>
+        <div style="font-size: 16px; font-weight: 600; margin-bottom: 4px;" data-i18n="deadline_days">дней</div>
         <div style="font-size: 12px; opacity: 0.85; margin-top: 8px;">До 15 июля 2026</div>
       </div>
     </div>
@@ -806,7 +806,7 @@ tbody tr:last-child td{border-bottom:none}
     <!-- My Actions Card -->
     <div class="card" style="margin-bottom: 20px;">
       <div class="card-header">
-        <h3 class="card-title">Мои действия</h3>
+        <h3 class="card-title" data-i18n="actions_title">Мои действия</h3>
         <span class="badge" style="background: #fef2f2; color: #ef4444; font-weight: 600;">5</span>
       </div>
       <div class="card-content" style="padding: 4px 16px 12px;">
@@ -1227,9 +1227,9 @@ function sortTable(colIndex) {
       <p style="font-size:14px; color:#64748b; margin:0;">Самооценка &middot; Q2 2026 &middot; Апр&ndash;Июн 2026</p>
     </div>
     <div style="display:flex; gap:8px;">
-      <button class="btn btn-outline">Сохранить черновик</button>
-      <button class="btn btn-secondary" style="background:#f1f5f9; border:1px solid #e2e8f0; color:#475569;">Завершить</button>
-      <button class="btn btn-primary">Направить на согласование</button>
+      <button class="btn btn-outline" data-i18n="btn_draft">Сохранить черновик</button>
+      <button class="btn btn-secondary" style="background:#f1f5f9; border:1px solid #e2e8f0; color:#475569;" data-i18n="btn_done">Завершить</button>
+      <button class="btn btn-primary" data-i18n="btn_submit">Направить на согласование</button>
     </div>
   </div>
 
@@ -2080,7 +2080,7 @@ var goalData = [
     title: 'Миграция на микросервисную архитектуру',
     criterion: 'Количество доменов, перенесённых на микросервисы',
     expectedResult: '4 домена к концу квартала',
-    weight: 30, achieveDate: '30.06.2026',
+    weight: 10, achieveDate: '30.06.2026',
     status: 'В процессе', score: 4, comment: '',
     achievedResult: 'Перенесено 3 из 4 доменов; время деплоя снижено на 42%',
     jiraLocked: false
@@ -2090,7 +2090,7 @@ var goalData = [
     title: 'Повышение производительности API',
     criterion: 'Снижение p95 latency критических эндпоинтов',
     expectedResult: 'p95 latency ≤ 200 мс',
-    weight: 20, achieveDate: '31.05.2026',
+    weight: 10, achieveDate: '31.05.2026',
     status: 'Завершена', score: 5, comment: 'Цель перевыполнена: достигнут p95 = 180 мс, пропускная способность +60%.',
     achievedResult: 'p95 latency = 180 мс, пропускная способность +60%',
     jiraLocked: false
@@ -2122,7 +2122,7 @@ var goalData = [
     title: 'Качество кода — SonarQube & MR (ДКИА)',
     criterion: '% задач без критических ошибок / покрытие тестами',
     expectedResult: 'Критические ошибки < 2%; покрытие > 80%',
-    weight: 60, achieveDate: '30.06.2026',
+    weight: 30, achieveDate: '30.06.2026',
     status: 'Загружено ДКИА', score: 4, comment: '',
     achievedResult: '% исполнения: 107% (загружено ДКИА)',
     jiraLocked: true
@@ -2132,7 +2132,7 @@ var goalData = [
     title: 'Выполнение задач Jira (скорость спринтов)',
     criterion: '% задач, закрытых в срок по спринтам',
     expectedResult: '≥ 90% задач закрыто в срок',
-    weight: 40, achieveDate: '30.06.2026',
+    weight: 20, achieveDate: '30.06.2026',
     status: 'Ожидает загрузки', score: null, comment: '',
     achievedResult: '',
     jiraLocked: true
@@ -2221,26 +2221,25 @@ function renderGoalDetail() {
     '</div>' +
   '</div>';
 
-  // Achieved result
-  if (g.achievedResult) {
-    html += '<div style="background:#f0fdf4; border:1px solid #86efac; border-radius:8px; padding:10px 14px; margin-bottom:14px;">' +
-      '<div style="font-size:10.5px; color:#065f46; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:3px;">Достигнутый результат</div>' +
-      '<div style="font-size:13px; color:#1e293b;">' + g.achievedResult + '</div>' +
-    '</div>';
-  }
+  // Достигнутый результат — редактируемое поле сотрудника
+  html += '<div style="margin-bottom:16px;">' +
+    '<label style="display:block; font-size:10.5px; color:#065f46; text-transform:uppercase; letter-spacing:0.5px; font-weight:600; margin-bottom:6px;">Достигнутый результат</label>' +
+    '<textarea onchange="saveAchievedResult(' + g.id + ', this.value)" style="width:100%; resize:vertical; min-height:72px; padding:10px 12px; border:1.5px solid #86efac; border-radius:8px; font-size:13px; font-family:inherit; background:#f0fdf4; outline:none; line-height:1.5; color:#1e293b;" placeholder="Опишите фактически достигнутый результат...">' + (g.achievedResult || '') + '</textarea>' +
+  '</div>';
 
   // Jira lock note
   if (g.jiraLocked) {
     html += '<div style="background:#faf5ff; border:1px solid #e9d5ff; border-radius:8px; padding:10px 14px; margin-bottom:16px; display:flex; align-items:flex-start; gap:8px;">' +
       '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" style="flex-shrink:0; margin-top:1px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>' +
-      '<span style="font-size:12px; color:#6d28d9; line-height:1.5;">Оценка по блоку Jira загружается HR-администратором из ДКИА на 7-й рабочий день после завершения квартала. Редактирование руководителями недоступно.</span>' +
+      '<span style="font-size:12px; color:#6d28d9; line-height:1.5;">Оценка по блоку Jira загружается HR-администратором из ДКИА на 7-й рабочий день после завершения квартала. Руководитель не может изменить оценку.</span>' +
     '</div>';
   }
 
   html += '<div style="height:1px; background:#e2e8f0; margin:14px 0;"></div>';
-  html += '<div style="font-size:14px; font-weight:600; color:#1e293b; margin-bottom:12px;">Самооценка — 5-балльная шкала</div>';
 
   if (g.jiraLocked) {
+    // Показываем оценку ДКИА (только для чтения)
+    html += '<div style="font-size:12px; font-weight:600; color:#6d28d9; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.4px;">Оценка ДКИА (5-балльная шкала)</div>';
     if (g.score !== null) {
       var rs = ratingScale[g.score - 1];
       html += '<div style="padding:14px; border-radius:10px; border:2px solid ' + rs.border + '; background:' + rs.bg + '; text-align:center;">' +
@@ -2249,35 +2248,16 @@ function renderGoalDetail() {
         '<div style="font-size:12px; color:#64748b; margin-top:4px;">' + rs.range + '</div>' +
       '</div>';
     } else {
-      html += '<div style="padding:14px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc; text-align:center; color:#94a3b8; font-size:13px;">Ожидается загрузка из ДКИА</div>';
+      html += '<div style="padding:14px; border-radius:10px; border:1px solid #e9d5ff; background:#faf5ff; text-align:center; color:#7c3aed; font-size:13px;">Ожидается загрузка из ДКИА</div>';
     }
   } else {
-    // Rating buttons
-    html += '<div style="display:flex; gap:6px; margin-bottom:10px;">';
-    ratingScale.forEach(function(r) {
-      var isSel = g.score === r.value;
-      html += '<button onclick="rateGoal(' + g.id + ',' + r.value + ')" style="flex:1; padding:8px 2px; border-radius:8px; cursor:pointer; text-align:center; transition:all .15s; border:' +
-        (isSel ? '2px solid ' + r.color + '; background:' + r.bg + ';' : '1px solid #e2e8f0; background:#fff;') + '">' +
-        '<div style="font-size:18px; font-weight:800; color:' + (isSel ? r.color : '#94a3b8') + ';">' + r.value + '</div>' +
-        '<div style="font-size:9px; font-weight:600; color:' + (isSel ? r.color : '#94a3b8') + '; margin-top:2px; line-height:1.2;">' + r.range + '</div>' +
-      '</button>';
-    });
-    html += '</div>';
-
-    // Scale labels
-    html += '<div style="display:flex; gap:6px; margin-bottom:16px;">';
-    ratingScale.forEach(function(r) {
-      html += '<div style="flex:1; text-align:center; font-size:9px; color:#64748b; line-height:1.3;">' + r.label + '</div>';
-    });
-    html += '</div>';
-
-    // Comment field — mandatory when score ≠ 3
-    html += '<div>' +
-      '<label style="display:block; font-size:13px; font-weight:500; color:#1e293b; margin-bottom:6px;">' +
-        'Комментарий' +
-        (commentRequired ? ' <span style="color:#dc2626;">*</span> <span style="font-size:11.5px; color:#dc2626; font-weight:400;">— обязателен при оценке ≠ 3</span>' : ' <span style="font-size:11.5px; color:#94a3b8; font-weight:400;">(необязательно)</span>') +
-      '</label>' +
-      '<textarea onchange="saveComment(' + g.id + ', this.value)" style="width:100%; resize:vertical; min-height:72px; padding:10px 12px; border:1.5px solid ' + (commentRequired ? '#fca5a5' : '#e2e8f0') + '; border-radius:8px; font-size:13px; font-family:inherit; background:#fff; outline:none; line-height:1.5; transition:border-color .15s;" placeholder="Опишите достигнутые результаты и обоснуйте оценку...">' + (g.comment || '') + '</textarea>' +
+    // Сотрудник НЕ выставляет оценку — это делает руководитель
+    html += '<div style="background:#fffbeb; border:1px solid #fde68a; border-radius:8px; padding:12px 16px; display:flex; align-items:center; gap:10px;">' +
+      '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" style="flex-shrink:0;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>' +
+      '<div>' +
+        '<div style="font-size:12.5px; font-weight:600; color:#92400e;">Оценку по 5-балльной шкале выставляет руководитель</div>' +
+        '<div style="font-size:11.5px; color:#b45309; margin-top:2px;">Шаг 4 — Оценка руководителя. Вы заполняете только достигнутый результат.</div>' +
+      '</div>' +
     '</div>';
   }
 
@@ -2297,6 +2277,11 @@ function rateGoal(goalId, rating) {
   renderGoalDetail();
   renderGoalList();
   renderSummaryGoals();
+}
+
+function saveAchievedResult(goalId, value) {
+  var g = goalData.find(function(x) { return x.id === goalId; });
+  if (g) g.achievedResult = value;
 }
 
 function saveComment(goalId, value) {
@@ -2377,7 +2362,6 @@ function renderFormB() {
   var html = '';
   formBData.forEach(function(b, idx) {
     var hasScore = b.score !== null;
-    var commentRequired = hasScore && b.score !== 3;
     html += '<div style="padding:14px 0; border-bottom:1px solid #f1f5f9; ' + (idx === formBData.length - 1 ? 'border-bottom:none;' : '') + '">' +
       '<div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">' +
         '<div>' +
@@ -2396,9 +2380,7 @@ function renderFormB() {
       '</button>';
     });
     html += '</div>';
-    if (commentRequired) {
-      html += '<textarea onchange="saveFormBComment(' + idx + ', this.value)" style="width:100%; resize:vertical; min-height:56px; padding:8px 10px; border:1.5px solid #fca5a5; border-radius:8px; font-size:12.5px; font-family:inherit; outline:none; background:#fff;" placeholder="Комментарий обязателен при оценке ≠ 3...">' + (b.comment || '') + '</textarea>';
-    }
+    html += '<textarea onchange="saveFormBComment(' + idx + ', this.value)" style="width:100%; resize:vertical; min-height:48px; padding:8px 10px; border:1px solid #e2e8f0; border-radius:8px; font-size:12.5px; font-family:inherit; outline:none; background:#fff; color:#475569;" placeholder="Комментарий (необязательно)...">' + (b.comment || '') + '</textarea>';
     html += '</div>';
   });
   document.getElementById('form-b-content').innerHTML = html;
@@ -2412,8 +2394,6 @@ function saveFormBComment(idx, value) { formBData[idx].comment = value; }
 function submitFormB() {
   var allDone = formBData.every(function(b) { return b.score !== null; });
   if (!allDone) { alert('Пожалуйста, оцените все критерии.'); return; }
-  var missingComment = formBData.some(function(b) { return b.score !== 3 && !b.comment.trim(); });
-  if (missingComment) { alert('Добавьте комментарии ко всем оценкам, отличным от 3.'); return; }
   alert('Оценка отправлена сотруднику. Ожидается подпись-ознакомление.');
 }
 
@@ -2567,6 +2547,21 @@ var TR = {
     btn_draft: 'Сохранить черновик', btn_done: 'Завершить', btn_submit: 'Направить на согласование',
     imp_stop: 'Завершить просмотр',
     nav_badge_active: 'Активна',
+    filter_all: 'Все',
+    filter_team_kpi: 'Командные KPI',
+    filter_ind_kpi: 'Индивидуальные KPI',
+    filter_jira: 'Оценка Jira',
+    th_goal: 'Цель', th_category: 'Категория', th_weight: 'Вес',
+    th_progress: 'Прогресс', th_status: 'Статус', th_deadline: 'Срок', th_score: 'Оценка',
+    goals_search_ph: 'Поиск по целям...',
+    lbl_dept: 'Департамент', lbl_mgmt: 'Управление', lbl_email: 'Email',
+    lbl_empnum: 'Табельный номер', lbl_management: 'Руководство',
+    lbl_direct_mgr: 'Непосредственный', lbl_senior_mgr: 'Вышестоящий',
+    badge_team_kpi: 'Командные KPI', badge_ind_kpi: 'Индивид. KPI', badge_jira: 'Jira',
+    deadline_title: 'Текущий дедлайн', deadline_sub: 'Самооценка',
+    deadline_days: 'дней',
+    actions_title: 'Мои действия',
+    progress_label: 'Общий прогресс:',
   },
   kz: {
     nav_menu: 'Мәзір',
@@ -2596,6 +2591,21 @@ var TR = {
     btn_draft: 'Жобаны сақтау', btn_done: 'Аяқтау', btn_submit: 'Келісуге жіберу',
     imp_stop: 'Қарауды аяқтау',
     nav_badge_active: 'Белсенді',
+    filter_all: 'Барлығы',
+    filter_team_kpi: 'Команда KPI',
+    filter_ind_kpi: 'Жеке KPI',
+    filter_jira: 'Jira бағасы',
+    th_goal: 'Мақсат', th_category: 'Санат', th_weight: 'Салмақ',
+    th_progress: 'Үдеріс', th_status: 'Мәртебе', th_deadline: 'Мерзім', th_score: 'Баға',
+    goals_search_ph: 'Мақсаттарды іздеу...',
+    lbl_dept: 'Департамент', lbl_mgmt: 'Басқарма', lbl_email: 'Email',
+    lbl_empnum: 'Табельдік нөмір', lbl_management: 'Басшылық',
+    lbl_direct_mgr: 'Тікелей', lbl_senior_mgr: 'Жоғары тұрған',
+    badge_team_kpi: 'Команда KPI', badge_ind_kpi: 'Жеке KPI', badge_jira: 'Jira',
+    deadline_title: 'Ағымдағы мерзім', deadline_sub: 'Өзін-өзі бағалау',
+    deadline_days: 'күн',
+    actions_title: 'Менің әрекеттерім',
+    progress_label: 'Жалпы үдеріс:',
   },
   en: {
     nav_menu: 'Menu',
@@ -2625,6 +2635,21 @@ var TR = {
     btn_draft: 'Save Draft', btn_done: 'Complete', btn_submit: 'Submit for Approval',
     imp_stop: 'Exit View',
     nav_badge_active: 'Active',
+    filter_all: 'All',
+    filter_team_kpi: 'Team KPI',
+    filter_ind_kpi: 'Individual KPI',
+    filter_jira: 'Jira Assessment',
+    th_goal: 'Goal', th_category: 'Category', th_weight: 'Weight',
+    th_progress: 'Progress', th_status: 'Status', th_deadline: 'Due Date', th_score: 'Score',
+    goals_search_ph: 'Search goals...',
+    lbl_dept: 'Department', lbl_mgmt: 'Division', lbl_email: 'Email',
+    lbl_empnum: 'Employee ID', lbl_management: 'Management',
+    lbl_direct_mgr: 'Direct', lbl_senior_mgr: 'Senior',
+    badge_team_kpi: 'Team KPI', badge_ind_kpi: 'Indiv. KPI', badge_jira: 'Jira',
+    deadline_title: 'Current Deadline', deadline_sub: 'Self Assessment',
+    deadline_days: 'days',
+    actions_title: 'My Actions',
+    progress_label: 'Overall progress:',
   }
 };
 
@@ -2716,6 +2741,16 @@ function applyTranslations() {
   // Impersonation stop button
   var stopBtn = document.querySelector('.impersonation-banner .stop-btn');
   if (stopBtn) stopBtn.textContent = t('imp_stop');
+  // Generic data-i18n pass (covers filter btns, table headers, profile labels, deadline, actions, badges)
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    el.textContent = t(key);
+  });
+  // Generic data-i18n-placeholder pass
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n-placeholder');
+    el.placeholder = t(key);
+  });
   // Re-render dynamic evaluation content
   if (typeof renderGoalList === 'function') renderGoalList();
   if (typeof renderGoalDetail === 'function') renderGoalDetail();
